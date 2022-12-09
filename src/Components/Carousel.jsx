@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import Carousel from "react-multi-carousel";
+import MoviesComponent from './MovieComponent';
 
 
 const responsive = {
@@ -40,9 +41,7 @@ function MovieCarousel() {
     dotListClass="custom-dot-list-style"
     itemClass="carousel-item-padding-40-px"
     >
-       <h1>i hate</h1>
-       <h1>i hate</h1>
-       <h1>i hate</h1>
+       <MoviesComponent/>
 </Carousel>
   )
 }
