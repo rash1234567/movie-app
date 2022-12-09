@@ -22,8 +22,7 @@ function Search() {
         <form className='w-full px-[10px] flex flex-col mb-6' onSubmit={newSearch}>
             <label className='text-[16px] md:text-[24px]' >Search</label>
             <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} className='w-[95%] border-[1px] border-solid border-black' />
-        </form>
-            
+        </form>  
            { movies.length > 0 && <>
             <h5 className='text-[18px] md:text-[24px] mb-2 md:mb-3'>Movies</h5>
             <MovieCarousel search={movies}/>
