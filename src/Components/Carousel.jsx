@@ -22,7 +22,7 @@ const responsive = {
     }
   };
 
-function MovieCarousel() {
+function MovieCarousel({search}) {
   return (
     <Carousel
     swipeable={true}
@@ -41,7 +41,11 @@ function MovieCarousel() {
     dotListClass="custom-dot-list-style"
     itemClass="carousel-item-padding-40-px"
     >
-       <MoviesComponent/>
+        {
+            search.map(movies=>{
+                return <MoviesComponent title={movies.Title}/>
+            })
+        }
 </Carousel>
   )
 }
